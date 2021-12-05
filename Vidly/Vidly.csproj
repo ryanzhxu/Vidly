@@ -149,11 +149,23 @@
     <Compile Include="Migrations\202112050233279_PopulateMembershipTypes.designer.cs">
       <DependentUpon>202112050233279_PopulateMembershipTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112050255190_AddAnnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\202112050255190_AddAnnotationsToCustomerName.designer.cs">
+      <DependentUpon>202112050255190_AddAnnotationsToCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112050311023_AddNameToMembershipType.cs" />
+    <Compile Include="Migrations\202112050311023_AddNameToMembershipType.designer.cs">
+      <DependentUpon>202112050311023_AddNameToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112050312405_PopulateMembershipTypesNames.cs" />
+    <Compile Include="Migrations\202112050312405_PopulateMembershipTypesNames.designer.cs">
+      <DependentUpon>202112050312405_PopulateMembershipTypesNames.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
-    <Compile Include="Models\MyDBContext.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
@@ -228,6 +240,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112050233279_PopulateMembershipTypes.resx">
       <DependentUpon>202112050233279_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112050255190_AddAnnotationsToCustomerName.resx">
+      <DependentUpon>202112050255190_AddAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112050311023_AddNameToMembershipType.resx">
+      <DependentUpon>202112050311023_AddNameToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112050312405_PopulateMembershipTypesNames.resx">
+      <DependentUpon>202112050312405_PopulateMembershipTypesNames.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

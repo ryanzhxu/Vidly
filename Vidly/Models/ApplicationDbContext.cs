@@ -6,9 +6,9 @@ using System.Data.Entity;
 
 namespace Vidly.Models
 {
-    public class MyDBContext:DbContext
+    public class ApplicationDbContext:DbContext
     {
-        public MyDBContext()
+        public ApplicationDbContext()
         {
 
         }
