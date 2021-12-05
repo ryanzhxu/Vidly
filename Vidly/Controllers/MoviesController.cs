@@ -34,10 +34,14 @@ namespace Vidly.Controllers
             return View("MovieForm", vm);
         }
 
-        public ActionResult Create(Movie movie)
+        [HttpPost]
+        public ActionResult Save(Movie movie)
         {
             if (movie.Id == 0)
+            {
+                movie.DateAdded = DateTime.Now;
                 _context.Movies.Add(movie);
+            }  
             else
             {
                 var movieInDb = _context.Movies.Single(m => m.Id == movie.Id);
